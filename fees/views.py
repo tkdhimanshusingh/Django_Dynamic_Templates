@@ -1,6 +1,14 @@
 from django.shortcuts import render
 # Create your views here.
 def fees_django(request):
-    return render(request,'fees/feesone.html')
+    cname='Django'
+    duration='4 months'
+    seats=10
+    django_details={'nm':cname,'du':duration,'st':seats}
+    return render(request,'fees/feesone.html',django_details)
 def fees_python(request):
-    return render(request,'fees/feestwo.html')
+    cname='Python'
+    duration='4 months'
+    seats=10
+    django_details={'nm':cname,'du':duration,'st':seats}
+    return render(request,'fees/feestwo.html',django_details)
